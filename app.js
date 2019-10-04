@@ -75,7 +75,7 @@ const pingPayload = JSON.stringify({type: 'ping'});
 // Keep the connection alive
 let pingInterval = setInterval(() => {
   wss.broadcast(pingPayload);
-}, 1 * 100);
+}, 1 * 5000);
 
 /**
  * Broadcast data to all connected clients
